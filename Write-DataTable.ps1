@@ -11,7 +11,7 @@
     foreach($col in $DataTable.Columns)
     {
         $maxColLength = 10
-        foreach ($row in $result.Rows)
+        foreach ($row in $DataTable.Rows)
         {
             $colValue = [System.Convert]::ToString($row[$col.ColumnName])
             if ($colValue.Length -gt $maxColLength)
